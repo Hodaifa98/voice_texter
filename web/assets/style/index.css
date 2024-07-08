@@ -1,0 +1,104 @@
+
+body {
+    font-family: Verdana, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #C8D0FF;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 2.2fr 0.4fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "actions . ."
+        "editor . ."
+        "export . .";
+}
+
+.actions {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    grid-area: actions;
+}
+
+label {
+    display: block;
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+select {
+    padding: 5px;
+    font-size: 15px;
+    border: 2px solid black;
+    border-radius: 4px;
+    width: 180px;
+    text-align: center;
+    background-color: #C8D0FF;
+    font-family: Verdana, Arial, sans-serif;
+    margin: 10px;
+}
+
+#icon {
+    width: 1.5em;
+}
+
+#icon:hover {
+    cursor: pointer;
+}
+
+.record-container {
+    padding-top: 5px;
+}
+
+.editor-container {
+    grid-area: editor;
+}
+
+#editor {
+    border: 1px solid black;
+}
+
+.ql-editor {
+}
+
+.ql-toolbar {
+    border-top: 1px solid black !important;
+    border-left: 1px solid black !important;
+    border-right: 1px solid black !important;
+}
+
+.export {
+    padding: 10px;
+    margin-top: 50px;
+    grid-area: export;
+    text-align: center;
+}
+
+#copyMessage {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12px;
+    margin-left: 3px;
+}
+
+.export button {
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    color: white;
+    background-color: #5469d4;
+    box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 12%) 0px 1px 1px 0px, rgb(84 105 212) 0px 0px 0px 1px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(60 66 87 / 8%) 0px 2px 5px 0px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 4px 8px;
+    display: inline-block;
+    min-height: 28px;
+    width: 100px;
+    transition: background-color .24s,box-shadow .24s;
+    :hover {
+        box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 12%) 0px 1px 1px 0px, rgb(84 105 212) 0px 0px 0px 1px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(60 66 87 / 8%) 0px 3px 9px 0px, rgb(60 66 87 / 8%) 0px 2px 5px 0px;
+    }
+}
